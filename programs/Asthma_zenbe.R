@@ -40,6 +40,12 @@ baselineheavy <- baselineheavy_data[, c(18, 28)]
 
 #項目名を「性別.1」から「性別_重症」に変更
 names(baselineheavy)[2] <- c("性別_重症")
+<<<<<<< HEAD
+=======
+
+#baselineとbaselineheavyを「症例登録番号」をキーにマージ
+sexdata <- merge(baseline, baselineheavy, by="症例登録番号", all = T)
+>>>>>>> f22bb1af6b0f07f207b13343687bdb6df95ca853
 
 #regiとbaselineを「症例登録番号」をキーにマージ
 merge1 <- merge(regi, baseline, by = "症例登録番号", all = T)
